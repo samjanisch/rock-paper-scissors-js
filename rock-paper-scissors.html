@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<body>
+    <script>
+        const gameArray = ["Rock", "Paper", "Scissors"]; 
+        function computerPlay() {
+           return gameArray[Math.random() * gameArray.length];
+        }
+        
+        
+        function playRound(playerSelection, computerSelection) {
+            if (playerSelection == "Rock" & computerSelection == "Scissors") {
+                return "You win! Rock crushes Scissors!"
+            } else if (playerSelection == "Rock" & computerSelection == "Paper") {
+                return "You lose! Paper covers rock"
+            } else if (playerSelection == "Rock" & computerSelection == "Rock") {
+                return "You both threw rock! That's a tie!"
+            }
+        }
+        const playerSelection = "Rock";
+        const computerSelection = computerPlay();
+    </script>
+</body>
+
+
+</html>
